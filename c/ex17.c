@@ -102,7 +102,7 @@ void Database_write(struct Connection *conn)
     }
 
     rc = fflush(conn->file);
-    if (rc != 1) {
+    if (rc == -1) {
         die("Cannot flush database.");
     }
 }
