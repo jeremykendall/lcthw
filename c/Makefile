@@ -8,4 +8,4 @@ all: $(objects)
 
 .PHONY: clean
 clean:
-	rm -f $(objects)
+	rm -rf $(objects) *.dSYM
