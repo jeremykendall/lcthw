@@ -1,8 +1,9 @@
-CFLAGS=-Wall -g
+CFLAGS=-Wall -g -DNDEBUG
 
 all: ex22_main
 
-ex22: ex22.o
+ex22_main: ex22.o
 
+.PHONY: clean
 clean:
 	rm -rf ex22_main ex22.o *.dSYM
