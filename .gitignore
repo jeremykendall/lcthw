@@ -1,2 +1,4 @@
 *un~
 *.sw?
+/c/nbproject/private/
+nbproject
